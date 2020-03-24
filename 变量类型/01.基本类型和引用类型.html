@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本类型和引用类型</title>
+</head>
+<body>
+<script>
+    // ?面试题：JS按存储类型方式区分为：值类型 引用类型
+    // 1. 值类型
+    var a = 100;
+    var b = a;
+    a = 200;
+    console.log(b);
+
+    // 2.引用类型  指针  （对象，数组，函数）
+    var a = {age: 20}
+    var b = a;
+    b.age = 21
+    console.log(a.age)
+
+    // 3.typeof 运算符 ? 面试题：JS中使用 typeof能得到什么类型？
+    console.log(typeof undefined)  // undefinded
+    console.log(typeof 'abc')      // string
+    console.log(typeof 123)        // number
+    console.log(typeof true)       // boolean
+    console.log(typeof {})         // object
+    console.log(typeof [])         // object
+    console.log(typeof null)       // object
+    console.log(typeof console.log) // function
+
+    /************************
+    * 注意
+    * 当变量为null时，使用typeOf 运算符的结果为 object
+    * 由前四行可知，typeOf 运算符对于值类型的变量 能够区分出来，
+    *  对于引用类型的变量（数组，对象），都是object
+    * 函数，使用typeof 运算符的结果为 function
+    */
+</script>
+</body>
+</html>

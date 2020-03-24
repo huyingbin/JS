@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var obj = {
+        a: undefined
+    }
+    // 在 jquery 源码中推荐写法  判断一个变量是否为 null 和 undefined 时，使用 ==
+    if (obj.a == null) {
+        // 这个判断相当于：obj.a === null || obbj.a === undefined
+        console.log("null 或 undefined")
+    }
+
+
+</script>  
+</body>
+</html>

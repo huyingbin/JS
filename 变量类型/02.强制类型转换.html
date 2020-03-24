@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /***
+    1. 字符串拼接
+    2. == 运算符
+    3. if 语句
+    4. 逻辑运算
+*/
+
+
+    // 1. 字符串拼接
+    var a = 100 + 10  // 110
+    var b = 100 + '10'  // '10010'
+    console.log(a, b);
+
+    // 2. == 运算符
+    var trans1 = 100 == '100'          // true
+    var trans2 = 0 == ''               // true
+    var trans3 = null == undefined     // true
+    console.log(trans1, trans2, trans3)
+
+    //  3. if 语句
+    var aIf = true
+    if (aIf) {
+        console.log('if1')
+    }
+
+    var bIf = 100
+    if(bIf) {
+        console.log('if2')
+    }
+
+    var cIf = ''
+    if (cIf) {
+        console.log("if3")
+    }
+
+    // 4. 逻辑运算
+    console.log(10 && 0)        // 先把 10 转化为ture   0
+    console.log('' || 'abc')    // 'abc'
+    console.log(!window.abc)    // abc 是undefined ，相当于 !undefined, true
+
+    // 判断一个变量是被当成 true 还是 false
+    // var result = 100
+    // var result = ''
+    var result = []
+
+    console.log(!!result)
+
+
+</script>
+</body>
+</html>
